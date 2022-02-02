@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+.template, .wrapper, .circle-one, .circle-two, .inner, h4 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+  left: 0%;
+  top: 10%;
+}
+
+.circle-one {
+  height: 45px;
+  width: 45px;
+  border-radius: 45%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #795DEF), to(#EB3CF9));
+  background-image: linear-gradient(to right, #795DEF 25%, #EB3CF9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF795DEF', endColorstr='#FFEB3CF9', GradientType=1);
+}
+
+.circle-two {
+  height: 40px;
+  width: 40px;
+  border-radius: 45%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #795DEF), to(#EB3CF9));
+  background-image: linear-gradient(to right, #795DEF 25%, #EB3CF9 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF795DEF', endColorstr='#FFEB3CF9', GradientType=1);
+}
+
+.inner {
+  height: 30px;
+  width: 30px;
+  background-color: #260E36;
+  border-radius: 45%;
+}
+
+h4 {
+  text-align: center;
+  vertical-align: middle;
+  color: #d8d7ff;
+  font-size: 16px;
+  padding-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+/*# sourceMappingURL=style.css.map */

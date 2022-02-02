@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+  background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent);
+  background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1);
+}
+
+.template {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    @extend .template;
+    left: 0%;
+    top: 10%;
+}
+
+.circle-one {
+  height: 45px;
+  width:45px;
+  border-radius: 45%;
+  @include gradient-horizontal(#795DEF, #EB3CF9, 25%, 100%);
+      @extend .template;
+}
+
+.circle-two {
+  height: 40px;
+  width: 40px;
+  border-radius: 45%;
+  @include gradient-horizontal(#795DEF, #EB3CF9, 25%, 100%);
+      @extend .template;
+}
+
+.inner {
+  @extend .template;
+  height: 30px;
+  width: 30px;
+  background-color: #260E36;
+  border-radius: 45%;
+}
+
+h4 {
+  @extend .template;
+  text-align: center;
+  vertical-align: middle;
+  color: rgb(216, 215, 255);
+  font-size: 16px;
+  padding-bottom: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}

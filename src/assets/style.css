@@ -1,0 +1,103 @@
+.projects{
+  background-image: linear-gradient(to bottom, #2d253a, #272037, #211a35, #1b1532, #141030);
+    min-height: 100vh;
+  }
+.filler{
+  background-image: linear-gradient(to bottom, #141030, #1a1338, #221641, #291949, #321b51);
+
+}
+
+/* modal */
+
+body.active-modal{
+  overflow-y: hidden;
+}
+
+.modal, .overlay{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+.overlay{
+  background: rgba(135, 135, 190, 0.788);
+}
+
+.modal-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #201360;
+  padding: 65px 48px;
+  margin-left: -1.5%;
+  max-width: 90vw;
+  min-width: 80vw;
+}
+
+@media only screen and (min-width: 1300px) {
+  .modal-content{
+    max-width: 1000px;
+    min-width: 700px;
+  }
+  .iconz{
+    display: flex;
+  }
+  .camp {
+    margin-left: -200px;
+    height: 70vh;
+  }
+  .navModal-content{
+    max-width: 15vw;
+  }
+ 
+}
+
+/* navbar */
+body.active-navModal{
+  overflow-y: hidden;
+}
+.navModal{
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+}
+.navModal-content{
+  position: absolute;
+  right: 0vw;
+  line-height: 1.4;
+  background: #201360;
+  padding: 65px 48px;
+  padding-bottom: 5rem;
+  margin-left: -1.5%;
+}
+.navOverlay{
+  background: rgba(135, 135, 190, 0);
+  width: 100vw;
+  height: 100vh;
+  margin: auto -20vw auto auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+}
+.active{
+  display: block;
+  z-index: 100;
+}
+.navModal-content p{
+  padding-right: 2vw;
+}
