@@ -124,7 +124,7 @@ function App() {
             <About/>
             
             <div className="text-indigo-300 text-2xl text-center p-10 sm:p-56">
-                <h1>Jim developed a wonderful and user-friendly website for our company in a very short time. We had been struggling with an outdated and difficult-to-use web presence, that had steadily decreased online sales. The new site has greatly improved our traffic and overall sales!</h1><br />
+                <h1>Zia developed a wonderful and user-friendly website for our company in a very short time. We had been struggling with an outdated and difficult-to-use web presence, that had steadily decreased online sales. The new site has greatly improved our traffic and overall sales!</h1><br />
                 <h1>- Noora, Al-Rihla Tourism</h1>
             </div>
 
